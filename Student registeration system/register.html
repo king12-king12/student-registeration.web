@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>📝 Register</h2>
+  <!-- Floating Theme Toggle -->
+<button id="themeToggle" class="theme-btn">🌙</button>
+
+</nav>
+
+<div class="form-card pop-in">
+  <h3 class="form-title">Student Registration</h3>
+
+  <form id="studentForm">
+    <input id="name" placeholder="Full Name">
+    <input id="email" placeholder="Email">
+    <input id="mobile" placeholder="Mobile Number">
+    <input id="age" type="number" placeholder="Age">
+    <select id="course">
+      <option value="">Select Course</option>
+      <option>Computer Science</option>
+      <option>AI</option>
+      <option>Data Science</option>
+      <option>Digital Marketing</option>
+      <option>UI & UX</option>
+    </select>
+    <select id="cast">
+      <option value="">Select Cast</option>
+      <option>OC</option>
+      <option>MBC</option>
+      <option>BC</option>
+      <option>SC</option>
+      <option>ST</option>
+    </select>
+
+    <button type="submit" class="btn-anim">Register</button>
+    <p id="msg"></p>
+    <p id="studentId"></p>
+  </form>
+</div>
+
+<script src="theme.js"></script>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
